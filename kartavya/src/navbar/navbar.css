@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    background-color: black;
+    width: 100vw;
+    height: 9.31vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    height: 1.77vw;
+    width: 11.56vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-menu{
+    height: 2.62vw;
+    width: 48.13vw;
+}
+
+.navbar-menu ul{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-menu ul li{
+    font-weight: 400;
+    font-size: 1.31vw;
+    padding: 0.52vw 2.62vw 0.52vw 2.62vw;
+}
+
+.register{
+    color: black;
+    height: 2.49vw;
+    width: 8.32vw;
+    background-color: green;
+    border-radius: 10vw;
+    border: none;
+}
+
+.fixing{ 
+    width: 11.56vw;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+}
+
+.cred{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 0vw 4vw 0vw 0vw;
+}

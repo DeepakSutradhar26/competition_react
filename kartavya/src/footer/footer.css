@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-footer{
+    height: 10vh;
+    width: 100vw;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border: 2px solid red;
+}
+
+.navbar-footer ul{
+    width: 48.13vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar-footer ul li{
+    font-weight: 400;
+    font-size: 1.31vw;
+    padding: 0.52vw 2.62vw 0.52vw 2.62vw;
+}
+
+.footer{
+    position: relative;
+    background: black;
+    background-image: url('./footer_images/Spiral.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0.5vw 5.8vw;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer::before{
+    content: "";
+    position: absolute;
+    height: 88.79vh;
+    width: 100vw;
+    background: url('./footer_images/texture_footer.png');
+    mix-blend-mode: multiply;
+}
+
+.circle-box{
+    height: 5.82vw;
+    width: 88vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: right;
+    position: absolute;
+    top: 0;
+}
+
+.circle-box img{
+    height: 5.82vw;
+    width: 5.82vw;
+    mix-blend-mode:difference;
+    -webkit-box-reflect: left 76.36vw;
+}
+
+.windows-box{
+    width: 100vw;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 2vw;
+}
+
+.windows-box img{
+    mix-blend-mode: difference;
+}
+
+.windows-box h1{
+    position: absolute;
+    color: white;
+    font-size : 9vw;
+}
+
+.credits-1{
+    position: absolute;
+    border: 2px solid red;
+    width: 78vw;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    bottom: 5vw;
+}
+
+.credits-1:last-child{
+    color: green;
+}
+
+.credits-2{
+    position: absolute;
+    border: 2px solid red;
+    width: 78vw;
+    color: white;
+    bottom: 2vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.credits-2 a{
+    color: white;
+}
+
+.info{
+    padding: 1vw 0vw 2vw 0vw;
+}
