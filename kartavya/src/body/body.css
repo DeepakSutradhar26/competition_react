@@ -1,0 +1,24 @@
+.body{
+    height: 89.11vw;
+    width: 100vw;
+    background-image: url('./body_images/Infinite\ Tiles.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.body::before{
+    content: "";
+    position: absolute;
+    height: 89.11vw;
+    width: 100vw;
+    background: url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg');
+    mix-blend-mode: color-burn;
+}
+
+.search-box{
+    height: 15.21vw;
+    width: 100vw;
+    border: 2px solid red;
+    position: absolute;
+}

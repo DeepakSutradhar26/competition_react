@@ -25,7 +25,7 @@
 .navbar-footer ul li{
     font-weight: 400;
     font-size: 1.31vw;
-    padding: 0.52vw 2.62vw 0.52vw 2.62vw;
+    padding: 0.52vw 1.88vw 0.52vw 1.88vw;
 }
 
 .footer{
@@ -46,10 +46,10 @@
 .footer::before{
     content: "";
     position: absolute;
-    height: 88.79vh;
+    height: 90vh;
     width: 100vw;
     background: url('./footer_images/texture_footer.png');
-    mix-blend-mode: multiply;
+    mix-blend-mode: color-burn;
 }
 
 .circle-box{
@@ -65,7 +65,7 @@
 .circle-box img{
     height: 5.82vw;
     width: 5.82vw;
-    mix-blend-mode:difference;
+    mix-blend-mode: difference;
     -webkit-box-reflect: left 76.36vw;
 }
 

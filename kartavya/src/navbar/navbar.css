@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid red;
 }
 
 .navbar-menu{
@@ -38,7 +39,7 @@
 .navbar-menu ul li{
     font-weight: 400;
     font-size: 1.31vw;
-    padding: 0.52vw 2.62vw 0.52vw 2.62vw;
+    padding: 0.52vw 1.88vw 0.52vw 1.88vw;
 }
 
 .register{
