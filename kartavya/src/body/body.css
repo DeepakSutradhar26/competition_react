@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .body{
     height: 89.11vw;
     width: 100vw;
@@ -55,22 +60,22 @@
     background-image: url('./body_images/Stairs.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 26.5vw  26.5vw;
+    background-position: 46.2vw  13.8vw;
     z-index: -5;
     mix-blend-mode: normal;
     position: absolute;
     animation-name: stairs;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-iteration-count: 2;
 }
 
 @keyframes stairs{
     0%{
-    background-position: 26.5vw  26.5vw;
+    background-position: 46.2vw 13.8vw;
     }
 
     100%{
-    background-position: 31.5vw  21.5vw;
+    background-position: 59.3vw 0.7vw;
     }
 }
 
@@ -85,8 +90,6 @@
 }
 
 .item{
-    height: 439px;
-    width: 387px;
     border: 2px solid red;
     margin: 1vw 4vw;
 }

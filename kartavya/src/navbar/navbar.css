@@ -1,4 +1,4 @@
-*{
+*{  
     margin: 0;
     padding: 0;
 }
@@ -17,47 +17,47 @@
 }
 
 .logo{
-    color: white;
     height: 1.77vw;
     width: 11.56vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid red;
 }
 
-.navbar-menu{
+#navbar-menu{
     height: 2.62vw;
-    width: 48.13vw;
+    width: 50.97vw;
 }
 
-.navbar-menu ul{
+#navbar-menu ul{
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     list-style: none;
+    box-sizing: border-box;
 }
 
-.navbar-menu ul li{
+#navbar-menu ul li{
+    font-family: 'Futara PT';
     font-weight: 400;
     font-size: 1.31vw;
-    padding: 0.52vw 1.88vw 0.52vw 1.88vw;
 }
 
 .register{
+    font-family: 'Uncut sans';
+    font-size: var(--font-size1);
     color: black;
     height: 2.49vw;
     width: 8.32vw;
-    background-color: green;
+    background-color: var(--color3);
     border-radius: 10vw;
     border: none;
 }
 
 .fixing{ 
     width: 11.56vw;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
 }
@@ -69,10 +69,130 @@
     padding: 0vw 4vw 0vw 0vw;
 }
 
-@media (max-width: 1000px){
-    .navbar-menu{
-        display: none;
+#icons{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px){
+    
+    *{
+        margin: 0;
+        padding: 0;
     }
 
+    #icons{
+        display: block;
+    }
+
+    #navbar-menu{
+        position: absolute;
+        width: 46.81vw;
+        height: 71.24vw;
+        top: 9.31vw;
+        right: 0;
+        background-color: black;
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar-menu.active{
+        display: grid;
+        place-items: center;
+        animation-name: hamburger;
+        animation-duration: 0.4s;
+    }
+
+    @keyframes hamburger{
+       0%{
+        height: 0vw;
+       }
+
+       100%{
+        height: 71.24vw;
+
+       }
+    }
     
+    #navbar-menu ul{
+        color: white;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 58.84vw;
+        width: 33vw;
+        box-sizing: border-box;
+        margin: auto;
+    }
+
+    #navbar-menu ul li{
+        font-weight: 400;
+        font-size: 4.07vw;
+        margin: auto;
+        animation-name: hamburger1;
+        animation-duration: 0.401s;
+        transition-timing-function: ease-in;
+    }
+
+    @keyframes hamburger1{
+        0%{
+            color: transparent;
+        }
+        50%{
+            color: transparent;  
+        }
+        100%{
+            color: white;
+        }
+    }
+
+    .register{
+        color: black;
+        height: 7.65vw;
+        width: 50.57vw;
+        border-radius: 10vw;
+        border: none;
+    }
+    
+    #icons{
+        color: white;
+        background-color: var(--color1);
+        outline: none;
+        border: none;
+        height: 3.90vw;
+        width: 6.24vw;
+        position: absolute;
+        right: 6vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .fixing{
+        height: auto;
+        width: auto;
+        position: relative;
+        left: 26vw;
+        cursor: pointer;
+    }
+
+    .register{
+        position: relative;
+        width: 25vw;
+        height: 5.65vw;
+        font-size: 4.07vw;
+        right: 4vw;
+    }
+
+    .logo{
+       position: absolute;
+       left: 2vw;
+       height: auto;
+       width: auto;
+       font-size: 5vw;
+       height: 5.73vw;
+       width: 40.96vw;
+    }
 }

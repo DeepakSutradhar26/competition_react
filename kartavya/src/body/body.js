@@ -16,10 +16,6 @@ const Body = () => {
             <div className="item-box">
                 <div className="item-container">
                     <div className="item"></div>
-                    <div className="item"></div>
-                    <div className="item"></div>
-                    <div className="item"></div>
-                    <div className="item"></div>
                 </div>
             </div>
         </div>

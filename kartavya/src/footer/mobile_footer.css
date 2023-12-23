@@ -1,0 +1,15 @@
+@media only screen and (max-width: 1024px){
+    .navbar-footer ul{
+        display: none;
+    }
+
+    .circle-box img{
+        height: 7.22vw;
+        width: 7.22vw;
+    }
+
+    .windows-box{
+      height: 39.16vw;
+      width: 83.33vw;
+    }
+}

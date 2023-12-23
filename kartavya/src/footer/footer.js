@@ -1,9 +1,18 @@
 import './footer.css';
+import './mobile_footer.css'
 import circle from './footer_images/Round element.png';
 import windows from './footer_images/Windows.png';
 import alcheringa from './footer_images/ALCHERINGA.png';
+import star from './footer_images/Star.png'
+import { useState } from 'react';
+import icon1 from './footer_images/Vector.png';
+import icon2 from './footer_images/Vector (1).png';
+import icon3 from './footer_images/Vector (2).png';
+import icon4 from './footer_images/Vector (3).png';
 
 const Footer = () => {
+    const {display,setDisplay} = useState(false)
+
     return (
         <div className="container">
             <nav className="navbar-footer">
@@ -24,6 +33,12 @@ const Footer = () => {
                 <div className="windows-box">
                     <img className='windows-img' src={windows} alt="" />
                     <img className="alcheringa" src={alcheringa} alt="" />
+                    <img id="spark1" className='star' src={star} alt="" />
+                    <img id="spark2" className='star' src={star} alt="" />
+                    <img id="spark3" className='star' src={star} alt="" />
+                    <img id="spark4" className='star' src={star} alt="" />
+                    <img id="spark5" className='star' src={star} alt="" />
+                    <img id="spark6" className='star' src={star} alt="" />
                 </div>
                 <div className="credits-1">
                     <div className="cred">
@@ -40,8 +55,14 @@ const Footer = () => {
                             <p>siddhant.s@alcheringa.in</p>
                         </div>
                     </div>
-                    <div className="cred">
+                    <div className="cred-1" id="seperate">
                         <p>Follow us on</p>
+                        <div className="icons">
+                            <img src={icon1} alt="" />
+                            <img src={icon2} alt="" />
+                            <img src={icon3} alt="" />
+                            <img src={icon4} alt="" />
+                        </div>
                     </div>
                 </div>
                 <div className="credits-2">
