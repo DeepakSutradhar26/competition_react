@@ -1,6 +1,7 @@
 import './footer.css';
 import circle from './footer_images/Round element.png';
 import windows from './footer_images/Windows.png';
+import alcheringa from './footer_images/ALCHERINGA.png';
 
 const Footer = () => {
     return (
@@ -10,6 +11,7 @@ const Footer = () => {
                     <li>Events</li>
                     <li>Competitions</li>
                     <li>Kartavya</li>
+                    <li>MUN</li>
                     <li>Merch</li>
                     <li>Team</li>
                     <li>Sponsers</li>
@@ -20,8 +22,8 @@ const Footer = () => {
                     <img src={circle} alt="" />
                 </div>
                 <div className="windows-box">
-                    <img src={windows} alt="" />
-                    <h1>ALCHERINGA</h1>
+                    <img className='windows-img' src={windows} alt="" />
+                    <img className="alcheringa" src={alcheringa} alt="" />
                 </div>
                 <div className="credits-1">
                     <div className="cred">

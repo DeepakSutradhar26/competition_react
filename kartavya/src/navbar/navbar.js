@@ -11,6 +11,7 @@ const Navbar = () => {
                     <li><a>Events</a></li>
                     <li><a>Competitions</a></li>
                     <li><a>Kartayva</a></li>
+                    <li><a>MUN</a></li>
                     <li><a>Merch</a></li>
                     <li><a>Team</a></li>
                     <li><a>Sponsers</a></li>

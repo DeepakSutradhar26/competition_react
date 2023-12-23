@@ -3,14 +3,29 @@
     padding: 0;
 }
 
+
+
+:root{
+    --color1: #181818;
+    --font-size1: 1.31vw;
+}
+
 .navbar-footer{
     height: 10vh;
     width: 100vw;
-    background: black;
+    background: var(--color1);
     display: flex;
     justify-content: center;
     align-items: end;
-    border: 2px solid red;
+}
+
+.navbar-footer::before{
+    content: "";
+    position: absolute;
+    height: 10vh;
+    width: 100vw;
+    background: url('./footer_images/texture_footer.png');
+    mix-blend-mode: color-burn;
 }
 
 .navbar-footer ul{
@@ -24,17 +39,17 @@
 
 .navbar-footer ul li{
     font-weight: 400;
-    font-size: 1.31vw;
+    font-size: var(--font-size1);
     padding: 0.52vw 1.88vw 0.52vw 1.88vw;
 }
 
 .footer{
     position: relative;
-    background: black;
+    background: var(--color1);
     background-image: url('./footer_images/Spiral.png');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 0.5vw 5.8vw;
+    background-position: top 7vw center;
     height: 90vh;
     width: 100vw;
     display: flex;
@@ -60,6 +75,8 @@
     justify-content: right;
     position: absolute;
     top: 0;
+    box-sizing: border-box;
+    border: 2px solid red;
 }
 
 .circle-box img{
@@ -71,22 +88,27 @@
 
 .windows-box{
     width: 100vw;
-    box-sizing: border-box;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     top: 2vw;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.windows-box img{
+.windows-img{
+    width: 87.73vw;
     mix-blend-mode: difference;
 }
 
-.windows-box h1{
+.alcheringa{
     position: absolute;
-    color: white;
-    font-size : 9vw;
+    height: 8.30vw;
+    width: 54.22vw;
+    border: 2px solid red;
+    top: 11vw;
 }
 
 .credits-1{

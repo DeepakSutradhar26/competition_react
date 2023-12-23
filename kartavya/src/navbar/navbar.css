@@ -3,8 +3,12 @@
     padding: 0;
 }
 
+:root{
+    --color1: #181818;
+}
+
 .header{
-    background-color: black;
+    background-color: var(--color1);
     width: 100vw;
     height: 9.31vw;
     display: flex;
@@ -63,4 +67,12 @@
     flex-direction: column;
     justify-content: left;
     padding: 0vw 4vw 0vw 0vw;
+}
+
+@media (max-width: 1000px){
+    .navbar-menu{
+        display: none;
+    }
+
+    
 }

@@ -5,6 +5,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center;
+    display: flex;
+    flex-direction: column;
 }
 
 .body::before{
@@ -20,5 +22,71 @@
     height: 15.21vw;
     width: 100vw;
     border: 2px solid red;
+}
+
+.title{
+    height: 4.78vw;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.title h2{
+    font-size: 3.93vw;
+    color: var(--color2);
+}
+
+.item-box{
+    height: 69.12vw;
+    width: 100vw;
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-box::before{
+    content: '';
+    height: 69.12vw;
+    width: 100vw;
+    background-image: url('./body_images/Stairs.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 26.5vw  26.5vw;
+    z-index: -5;
+    mix-blend-mode: normal;
     position: absolute;
+    animation-name: stairs;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes stairs{
+    0%{
+    background-position: 26.5vw  26.5vw;
+    }
+
+    100%{
+    background-position: 31.5vw  21.5vw;
+    }
+}
+
+.item-container{
+    height: 63.96vw;
+    width: 86.12vw;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.item{
+    height: 439px;
+    width: 387px;
+    border: 2px solid red;
+    margin: 1vw 4vw;
 }

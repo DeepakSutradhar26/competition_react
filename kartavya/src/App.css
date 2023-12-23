@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+:root{
+    --color1: #181818;
+    --color2: #E8EDD9;
+    --font-size1: 1.31vw;
+}
