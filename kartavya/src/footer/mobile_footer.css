@@ -1,4 +1,13 @@
-@media only screen and (max-width: 1024px){
+:root{
+    --font-size-10-360: 2.77vw;
+}
+
+
+@media (max-width: 1024px){
+    .navbar-footer{
+       height: 10vh;
+    }
+    
     .navbar-footer ul{
         display: none;
     }
@@ -12,4 +21,106 @@
       height: 39.16vw;
       width: 83.33vw;
     }
+
+    .extra-box{
+        height: 40vh;
+    }
+
+    .credits-1{
+        height: 30vh;
+        width: 87.8vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cred{
+        width: 43.9vw;
+        font-size: 2vw;
+    }
+
+    .cred h1,p{
+        font-size: 2vw;
+    }
+
+    .grid-1{
+        order: 1;
+    }
+
+    .grid-2{
+        order: 3;
+    }
+
+    #seperate{
+        order: 2;
+        height: 30vh;
+        width: 43.9vw;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        display: flex;
+        align-items: end;
+    }
+
+    #normal-text{
+        display: none;
+    }
+
+    #follow-text,#on-text{
+        font-family: 'Uncut sans regular';
+        display: inline-block;
+        font-size: 2vw;
+        height: 3vh;
+    }
+
+    .icons{
+        height: 27vh;
+        flex-direction: column;
+        align-items: end;
+        margin-top: 0;
+    }
+
+    #seperate img{
+        height: 3vw;
+        width: 3vw;
+        margin: 1vw 0vw;
+    }
+
+    .credits-2{
+        height: 5.8vh;
+        width: 86.66vw;
+    }
+
+    .extra-width{
+        width: 86.66vw;
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        font-size: 2vw;
+    }
+
+    .extra-width a{
+        font-size: 2vw;
+        padding: 0vw 0.6vw;
+    }
+
+    .credits-2 div{
+        display: none;
+        font-size: var(--font-size-10-360);
+    }
+
+    .windows-img{
+        object-fit: cover;
+    }
+
+    .img-hider{
+        display: inline-block;
+        width: 40vw;
+        height: 35vw;
+        border: 2px solid red;
+        overflow: hidden;
+        -webkit-box-reflect: ;
+    }
+
 }

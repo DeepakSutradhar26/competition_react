@@ -125,6 +125,7 @@
         width: 33vw;
         box-sizing: border-box;
         margin: auto;
+        z-index: 2;
     }
 
     #navbar-menu ul li{

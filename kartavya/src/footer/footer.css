@@ -36,7 +36,6 @@
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    border: 2px solid red;
     box-sizing: border-box;
 }
 
@@ -57,7 +56,7 @@
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 }
 
@@ -71,13 +70,11 @@
 }
 
 .circle-box{
-    height: 5.82vw;
+    height: 12.8vh;
     width: 88vw;
     box-sizing: border-box;
     display: flex;
     justify-content: right;
-    position: absolute;
-    top: 0;
     box-sizing: border-box;
     border: 2px solid red;
 }
@@ -85,6 +82,12 @@
 .circle-box img{
     height: 5.82vw;
     width: 5.82vw;
+}
+
+.extra-box{
+    height: 50vh;
+    width: 100vw;
+    border: 2px solid red;
 }
 
 .windows-box{
@@ -97,6 +100,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 2px solid red;
 }
 
 .windows-img{
@@ -108,19 +112,16 @@
     position: absolute;
     height: 8.30vw;
     width: 54.22vw;
-    border: 2px solid red;
     top: 11vw;
 }
 
 .credits-1{
-    position: absolute;
     border: 2px solid red;
     width: 78vw;
-    height: 8.5vw;
+    height: 18vh;
     color: white;
     display: flex;
     flex-direction: row;
-    bottom: 5vw;
 }
 
 .cred{
@@ -132,15 +133,14 @@
     font-family: 'Uncut sans regular';
 }
 
+.cred h1{
+    font-size: var(--font-size-20-1440);
+}
+
 .cred-1 h1{
     font-family: 'Uncut sans regular';
     font-size: var(--font-size-20-1440);
     font-weight: 600;
-}
-
-.cred-1 p{
-    font-family: 'Uncut sans regular';
-    font-size: var(--font-size-16-1440);
 }
 
 #seperate{
@@ -153,11 +153,13 @@
     align-items: center;
 }
 
-#seperate p{
+#normal-text{
     width: 30vw;
     border: 2px solid red;
     display: flex;
     justify-content: right;
+    font-family: 'Uncut sans regular';
+    font-size: var(--font-size-16-1440);
 }
 
 #seperate img{
@@ -178,15 +180,19 @@
 }
 
 .credits-2{
-    position: absolute;
     border: 2px solid red;
+    height: 8vh;
     width: 78vw;
     color: white;
-    bottom: 3.2vw;
     display: flex;
     flex-direction: row;
     font-family: 'Uncut sans regular';
     font-size: var(--font-size-16-1440);
+    box-sizing: border-box;
+}
+
+.extra-width{
+    width: 50vw;
 }
 
 .credits-2 a{
@@ -197,8 +203,14 @@
 
 .credits-2 div{
     font-size: var(--font-size-16-1440);
-    position: absolute;
-    right: 0;
+    padding-left: 20vw;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+}
+
+.credits-2 div p{
+    text-align: right;
 }
 
 .info{
@@ -211,48 +223,73 @@
     position: absolute;
     height: 4.27vw;
     width: 4.24vw;
+    animation-name: all-spark;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
-.twinkle{
-    animation-name: sparkling;
-    animation-duration: 1.5s;
-    animation-iteration-count: 3;
-    transition-timing-function: ease-in-out;
-}
-
-@keyframes sparkling{
+@keyframes all-spark{
     0%{
-        opacity: 0%;
+        opacity: 0;
+    }
+
+    50%{
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
     }
     100%{
-        opacity: 100%;
+        opacity: 0;
     }
 }
 
 #spark1{
     top: 6vw;
     left: 25vw;
+    animation-duration: 2.5s;
+    transition: all 2s;
+    animation-timing-function: ease-in-out;
 }
 
 #spark2{
     top: 20vw;
     left: 25vw;
+    animation-duration: 4s;
+    transition: all 2s;
 }
 
 #spark3{
     top: 6vw;
     right: 25vw;
+    animation-duration: 8s;
+    transition: all 2s;
 }
 
 #spark4{
     top: 20vw;
     right: 25vw;
+    animation-duration: 2.5s;
+    transition: all 2s;
+    animation-timing-function: ease-in-out;
 }
 
 #spark5{
     top: 6vw;
+    animation-duration: 4s;
+    transition: all 2s;
 }
 
 #spark6{
     top: 20vw;
+    animation-duration: 8s;
+    transition: all 2s;
+}
+
+#follow-text,#on-text{
+    display: none;
+}
+
+.img-hider{
+    display: none;
 }

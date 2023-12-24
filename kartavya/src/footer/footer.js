@@ -1,17 +1,16 @@
 import './footer.css';
 import './mobile_footer.css'
+import './mobile_footer_1.css'
 import circle from './footer_images/Round element.png';
 import windows from './footer_images/Windows.png';
 import alcheringa from './footer_images/ALCHERINGA.png';
 import star from './footer_images/Star.png'
-import { useState } from 'react';
 import icon1 from './footer_images/Vector.png';
 import icon2 from './footer_images/Vector (1).png';
 import icon3 from './footer_images/Vector (2).png';
 import icon4 from './footer_images/Vector (3).png';
 
 const Footer = () => {
-    const {display,setDisplay} = useState(false)
 
     return (
         <div className="container">
@@ -30,8 +29,13 @@ const Footer = () => {
                 <div className="circle-box">
                     <img src={circle} alt="" />
                 </div>
+                <div className="extra-box">
+
+                </div>
                 <div className="windows-box">
+                    <div className="img-hider">
                     <img className='windows-img' src={windows} alt="" />
+                    </div>
                     <img className="alcheringa" src={alcheringa} alt="" />
                     <img id="spark1" className='star' src={star} alt="" />
                     <img id="spark2" className='star' src={star} alt="" />
@@ -41,14 +45,14 @@ const Footer = () => {
                     <img id="spark6" className='star' src={star} alt="" />
                 </div>
                 <div className="credits-1">
-                    <div className="cred">
+                    <div className="cred grid-1">
                         <h1>Siddhant Singh</h1>
                         <div className="info">
                             <p>+91 9310859978</p>
                             <p>siddhant.s@alcheringa.in</p>
                         </div>
                     </div>
-                    <div className="cred">
+                    <div className="cred grid-2">
                         <h1>Siddhant Singh</h1>
                         <div className="info">
                             <p>+91 9310859978</p>
@@ -56,7 +60,9 @@ const Footer = () => {
                         </div>
                     </div>
                     <div className="cred-1" id="seperate">
-                        <p>Follow us on</p>
+                        <p id='normal-text'>Follow us on</p>
+                        <p id="follow-text">Follow us</p>
+                        <p id="on-text">on</p>
                         <div className="icons">
                             <img src={icon1} alt="" />
                             <img src={icon2} alt="" />
@@ -66,7 +72,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="credits-2">
-                    <p>Designed and Developed by <a href="">Alcher Creatives</a> & <a href="">Alcher Web Operations</a></p>
+                    <p className='extra-width'>Designed and Developed by <a href="">Alcher Creatives</a> & <a href="">Alcher Web Operations</a></p>
                     <div>
                         <p>For Business Enquiries</p>
                         <a href="">publicrelations24@alcheringa.in</a>
