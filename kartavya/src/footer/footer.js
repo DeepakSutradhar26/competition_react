@@ -33,9 +33,7 @@ const Footer = () => {
 
                 </div>
                 <div className="windows-box">
-                    <div className="img-hider">
                     <img className='windows-img' src={windows} alt="" />
-                    </div>
                     <img className="alcheringa" src={alcheringa} alt="" />
                     <img id="spark1" className='star' src={star} alt="" />
                     <img id="spark2" className='star' src={star} alt="" />
