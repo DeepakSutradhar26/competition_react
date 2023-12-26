@@ -1,5 +1,7 @@
 const Merch = () => {
-    return (<div></div> );
+    return (<div>
+        <h1>Merch</h1>
+    </div> );
 }
  
 export default Merch;

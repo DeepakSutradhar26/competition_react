@@ -1,5 +1,7 @@
 const MUN = () => {
-    return ( <div></div> );
+    return ( <div>
+        <h1>MUN</h1>
+    </div> );
 }
  
 export default MUN;

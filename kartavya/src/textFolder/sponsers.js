@@ -1,5 +1,7 @@
 const Sponsers = () => {
-    return ( <div></div> );
+    return ( <div>
+        <h1>Sponsers</h1>
+    </div> );
 }
  
 export default Sponsers;

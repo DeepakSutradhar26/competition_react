@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import './navbar.css';
+import './color_changer.css';
 import alcher_logo from './navbar_images/ALCHERINGA logo.png';
 import {Link } from 'react-router-dom';
 
@@ -14,7 +15,7 @@ class Navbar extends Component {
         return (
             <div className="header">
                 <div className="logo">
-                    <img class="logo" src={alcher_logo} alt="" />
+                    <Link to="/"><img class="logo" src={alcher_logo} alt="" /></Link>
                 </div>
                 <nav id="navbar-menu" className={this.state.clicked ? '.navbar-menu active' : 'navbar-menu'}>
                     <ul>
@@ -30,7 +31,7 @@ class Navbar extends Component {
                 <div className="fixing">
                     <button className="register">Register</button>
                 </div>
-                <button id="icons" className={this.state.clicked ? 'fas fa-times fa-2x' : 'fas fa-thin fa-bars fa-2x'} onClick={this.handleClick}>
+                <button id="icons" className={this.state.clicked ? 'fas fa-times fa-2x' : 'fas fa-bars fa-2x'} onClick={this.handleClick}>
                 </button>
             </div>
         );

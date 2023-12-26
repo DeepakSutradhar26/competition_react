@@ -14,7 +14,7 @@ class Body extends Component {
                 <div className="search-box">
                     <div className="container-1">
                         <form action="">
-                            <input className='search' type="text" placeholder='Search Competitions' />
+                            <input className='search' type="text" placeholder='Search Competitions' defaultValue="" />
                             <a href=""><i className='fa-solid fa-magnifying-glass'></i></a>
                         </form>
                         <div className="modules">

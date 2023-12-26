@@ -45,6 +45,11 @@
     font-size: 1.31vw;
 }
 
+#navbar-menu ul li Link{
+    text-decoration: none;
+    color: white;
+}
+
 .register{
     font-family: 'Uncut sans';
     font-size: var(--font-size1);

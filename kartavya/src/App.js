@@ -2,7 +2,7 @@ import Navbar from './navbar/navbar.js';
 import Footer from './footer/footer.js';
 import Body from './body/body.js';
 import './App.css';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Events from './textFolder/events';
 import Competitions from './textFolder/competitions';
 import Kartavya from './textFolder/kartavya';
@@ -24,8 +24,9 @@ function App() {
         <Route exact path="/Merch" element={<Merch />}></Route>
         <Route exact path="/Team" element={<Team />}></Route>
         <Route exact path="/Sponsers" element={<Sponsers />}></Route>
-        <Footer />
       </Routes>
+      <Footer />
+
     </>
   );
 }

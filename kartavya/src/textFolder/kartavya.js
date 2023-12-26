@@ -1,5 +1,7 @@
 const Kartavya = () => {
-    return ( <div></div> );
+    return ( <div>
+        <h1>Kartavya</h1>
+    </div> );
 }
  
 export default Kartavya;
