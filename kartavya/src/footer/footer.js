@@ -1,7 +1,8 @@
 import './footer.css';
-import './mobile_footer.css'
-import './mobile_footer_1.css'
+import './mobile_footer.css';
+import './bg_change.css';
 import circle from './footer_images/Round element.png';
+import circle1 from './circle_images/Frame 15232-min.png'
 import windows from './footer_images/Windows.png';
 import alcheringa from './footer_images/ALCHERINGA.png';
 import star from './footer_images/Star.png'
@@ -9,39 +10,65 @@ import icon1 from './footer_images/Vector.png';
 import icon2 from './footer_images/Vector (1).png';
 import icon3 from './footer_images/Vector (2).png';
 import icon4 from './footer_images/Vector (3).png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
+import windows1 from './windows_images/Frame 15230-min.png';
 
-const Footer = () => {
+const Footer = (props) => {
+    const location = useLocation();
 
     return (
         <div className="container">
-            <nav className="navbar-footer">
-                <ul>
-                    <li><Link to="/Events">Events</Link></li>
-                    <li><Link to="/Competitions">Competitions</Link></li>
-                    <li><Link to="/Kartavya">Kartayva</Link></li>
-                    <li><Link to="/MUN">MUN</Link></li>
-                    <li><Link to="/Merch">Merch</Link></li>
-                    <li><Link to="/Team">Team</Link></li>
-                    <li><Link to="/Sponsers">Sponsers</Link></li>
-                </ul>
-            </nav>
-            <div className="footer">
+            <div className="navbar-footer">
+                <nav className="navbar-menu-footer">
+                    <ul>
+                        <li className={location.pathname === '/Events' ? 'c c1' : ''}>
+                            <Link to="/Events">Events</Link></li>
+                        <li className={location.pathname === '/Competitions' ? 'c c1' : ''}>
+                            <Link to="/Competitions">Competitions</Link></li>
+                        <li className={location.pathname === '/Kartavya' ? 'c c3' : ''}>
+                            <Link to="/Kartavya">Kartayva</Link></li>
+                        <li className={location.pathname === '/MUN' ? 'c c4' : ''}>
+                            <Link to="/MUN">MUN</Link></li>
+                        <li className={location.pathname === '/Merch' ? 'c c5' : ''}>
+                            <Link to="/Merch">Merch</Link></li>
+                        <li className={location.pathname === '/Team' ? 'c c6' : ''}>
+                            <Link to="/Team">Team</Link></li>
+                        <li className={location.pathname === '/Sponsers' ? 'c c7' : ''}>
+                            <Link to="/Sponsers">Sponsers</Link></li>
+                    </ul>
+                </nav>
+            </div>
+            <div className={location.pathname === props.title ? 'unactive' :'footer'}>
                 <div className="circle-box">
-                    <img src={circle} alt="" />
+                    <img className={location.pathname === '/' ? '' : 'unactive'} src={circle} alt="" />
+                    <img className={location.pathname === '/Events' ? '' : 'unactive'} src={circle1} alt="" />
+                    <img className={location.pathname === '/Competitions' ? '' : 'unactive'} src={circle} alt="" />
+                    <img className={location.pathname === '/Kartavya' ? '' : 'unactive'} src={circle} alt="" />
+                    <img className={location.pathname === '/MUN' ? '' : 'unactive'} src={circle} alt="" />
+                    <img className={location.pathname === '/Merch' ? '' : 'unactive'} src={circle} alt="" />
+                    <img className={location.pathname === '/Team' ? '' : 'unactive'} src={circle} alt="" />
+                    <img className={location.pathname === '/Sponsers' ? '' : 'unactive'} src={circle} alt="" />
                 </div>
                 <div className="extra-box">
 
                 </div>
                 <div className="windows-box">
-                    <img className='windows-img' src={windows} alt="" />
+                    <img className={location.pathname === '/' ? 'windows-img' : 'unactive'} src={windows} alt="" />
+                    <img className={location.pathname === '/Events' ? 'windows-img' : 'unactive'} src={windows1} alt="" />
+                    <img className={location.pathname === '/Competitions' ? 'windows-img' : 'unactive'} src={windows} alt="" />
+                    <img className={location.pathname === '/Kartavya' ? 'windows-img' : 'unactive'} src={windows} alt="" />
+                    <img className={location.pathname === '/MUN' ? 'windows-img' : 'unactive'} src={windows} alt="" />
+                    <img className={location.pathname === '/Merch' ? 'windows-img' : 'unactive'} src={windows} alt="" />
+                    <img className={location.pathname === '/Team' ? 'windows-img' : 'unactive'} src={windows} alt="" />
+                    <img className={location.pathname === '/Sponsers' ? 'windows-img' : 'unactive'} src={windows} alt="" />
                     <img className="alcheringa" src={alcheringa} alt="" />
-                    <img id="spark1" className='star' src={star} alt="" />
-                    <img id="spark2" className='star' src={star} alt="" />
-                    <img id="spark3" className='star' src={star} alt="" />
-                    <img id="spark4" className='star' src={star} alt="" />
-                    <img id="spark5" className='star' src={star} alt="" />
-                    <img id="spark6" className='star' src={star} alt="" />
+                    <img id="spark1" className={location.pathname === props.title ? 'unactive':'star'} src={props.star} alt="" />
+                    <img id="spark2" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
+                    <img id="spark3" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
+                    <img id="spark4" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
+                    <img id="spark5" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
+                    <img id="spark6" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
                 </div>
                 <div className="credits-1">
                     <div className="cred grid-1">
@@ -80,6 +107,8 @@ const Footer = () => {
             </div>
         </div>
     );
+
+
 }
 
 export default Footer;

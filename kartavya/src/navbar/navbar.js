@@ -1,41 +1,50 @@
-import { Component } from 'react';
 import './navbar.css';
 import './color_changer.css';
 import alcher_logo from './navbar_images/ALCHERINGA logo.png';
 import {Link } from 'react-router-dom';
+import React,{ useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
-class Navbar extends Component {
-    state = { clicked: false };
+const Navbar = ()=> {
+    const location = useLocation();
 
-    handleClick = () => {
-        this.setState({ clicked: !this.state.clicked });
+    var {state,setState} = useState(false);
+    
+    const handleClick = () => {
+        setState(!state);
     }
 
-    render() {
         return (
             <div className="header">
                 <div className="logo">
                     <Link to="/"><img class="logo" src={alcher_logo} alt="" /></Link>
                 </div>
-                <nav id="navbar-menu" className={this.state.clicked ? '.navbar-menu active' : 'navbar-menu'}>
+                <nav id="navbar-menu" className={state === false ? '.navbar-menu active' : 'navbar-menu'}>
                     <ul>
-                        <li><Link to="/Events">Events</Link></li>
-                        <li><Link to="/Competitions">Competitions</Link></li>
-                        <li><Link to="/Kartavya">Kartayva</Link></li>
-                        <li><Link to="/MUN">MUN</Link></li>
-                        <li><Link to="/Merch">Merch</Link></li>
-                        <li><Link to="/Team">Team</Link></li>
-                        <li><Link to="/Sponsers">Sponsers</Link></li>
+                        <li className={location.pathname === '/Events' ? 'c c1':''}>
+                            <Link to="/Events">Events</Link></li>
+                        <li className={location.pathname === '/Competitions' ? 'c c1':''}>
+                            <Link to="/Competitions">Competitions</Link></li>
+                        <li className={location.pathname === '/Kartavya' ? 'c c3':''}>
+                            <Link to="/Kartavya">Kartayva</Link></li>
+                        <li className={location.pathname === '/MUN' ? 'c c4': ''}>
+                            <Link to="/MUN">MUN</Link></li>
+                        <li className={location.pathname === '/Merch' ? 'c c5':''}>
+                            <Link to="/Merch">Merch</Link></li>
+                        <li className={location.pathname === '/Team' ? 'c c6':''}>
+                            <Link to="/Team">Team</Link></li>
+                        <li className={location.pathname === '/Sponsers' ? 'c c7': ''}>
+                            <Link to="/Sponsers">Sponsers</Link></li>
                     </ul>
                 </nav>
                 <div className="fixing">
                     <button className="register">Register</button>
                 </div>
-                <button id="icons" className={this.state.clicked ? 'fas fa-times fa-2x' : 'fas fa-bars fa-2x'} onClick={this.handleClick}>
+                <div className="hidden-box"></div>
+                <button id="icons" className={state === false ? 'fas fa-times fa-2x' : 'fas fa-bars fa-2x'} onClick={()=>{handleClick()}}>
                 </button>
             </div>
         );
     }
-}
 
 export default Navbar;

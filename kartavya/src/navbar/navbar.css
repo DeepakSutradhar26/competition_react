@@ -43,11 +43,16 @@
     font-family: 'Futara PT';
     font-weight: 400;
     font-size: 1.31vw;
+    height: 2.62vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#navbar-menu ul li Link{
+#navbar-menu ul li a{
     text-decoration: none;
     color: white;
+    padding: 0.66vw 0.66vw 0.66vw 0.66vw;
 }
 
 .register{
@@ -75,6 +80,10 @@
 }
 
 #icons{
+    display: none;
+}
+
+.hidden-box{
     display: none;
 }
 
@@ -179,26 +188,17 @@
     .fixing{
         height: auto;
         width: auto;
-        position: relative;
-        left: 26vw;
-        cursor: pointer;
     }
 
     .register{
-        position: relative;
         width: 25vw;
         height: 5.65vw;
         font-size: 4.07vw;
-        right: 4vw;
     }
 
     .logo{
-       position: absolute;
-       left: 2vw;
-       height: auto;
-       width: auto;
-       font-size: 5vw;
        height: 5.73vw;
        width: 40.96vw;
     }
+    
 }

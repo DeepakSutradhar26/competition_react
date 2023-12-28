@@ -28,21 +28,34 @@
     mix-blend-mode: color-burn;
 }
 
-.navbar-footer ul{
+.navbar-menu-footer{
+    height: 2.62vw;
     width: 50.97vw;
+}
+
+.navbar-footer ul{
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     list-style: none;
-    box-sizing: border-box;
 }
 
 .navbar-footer ul li{
     font-family: 'Futara PT';
     font-weight: 400;
-    font-size: var(--font-size-20-1440);
+    font-size: 1.31vw;
+    height: 2.62vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-footer ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0.66vw 0.66vw 0.66vw 0.66vw;
 }
 
 .footer{
@@ -104,6 +117,7 @@
 }
 
 .windows-img{
+    display: inline-block;
     width: 87.73vw;
     mix-blend-mode: difference;
 }
@@ -291,5 +305,9 @@
 }
 
 .img-hider{
+    display: none;
+}
+
+.unactive{
     display: none;
 }
