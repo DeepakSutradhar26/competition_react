@@ -10,36 +10,33 @@ import MUN from './textFolder/mun';
 import Merch from './textFolder/merch';
 import Team from './textFolder/team';
 import Sponsers from './textFolder/sponsers';
-import { useState } from 'react';
-import star from './footer/footer_images/Star.png'
-import star1 from './footer/star_images/Frame 15234-min.png';
 
 function App() {
-  const {color,setColor} = useState([
-    {title:'/',bg:"",star:star,id:0},
-    {title:"/Events",bg:"img1",star:star1,id:1},
-    {title:"/Competitions",bg:"img2",star:star1,id:2},
-    {title:"/Kartavya",bg:"img3",star:star1,id:3},
-    {title:"/MUN",bg:"img4",star:star1,id:4},
-    {title:"/Merch",bg:"img5",star:star1,id:5},
-    {title:"/Team",bg:"img6",star:star1,id:6},
-    {title:"/Sponsers",bg:"img7",star:star1,id:7}]);
+
+  const data = [
+    { title: "/", bg: "footer ", star: "star", id: 0,bool: false},
+    { title: "/Events", bg: "footer img1", star: "star1 star", id: 1,bool: false },
+    { title: "/Competitions", bg: "footer img2", star: "star1 star", id: 2,bool: false },
+    { title: "/Kartavya", bg: "footer img3", star: "star1 star", id: 3,bool: false },
+    { title: "/MUN", bg: "footer img4", star: "star1 star", id: 4,bool: false },
+    { title: "/Merch", bg: "footer img5", star: "star1 star", id: 5,bool: false },
+    { title: "/Team", bg: "footer img6", star: "star1 star", id: 6,bool: false },
+    { title: "/Sponsers", bg: "footer img7", star: "star1 star", id: 7,bool: false }];
 
   return (
     <>
-      <Navbar blog ={color}/>
-      <Routes>
-        <Route exact path='/' element={<Body />}></Route>
-        <Route exact path="/Events" element={<Events />}></Route>
-        <Route exact path="/Competitions" element={<Competitions />}></Route>
-        <Route exact path="/Kartavya" element={<Kartavya />}></Route>
-        <Route exact path="/MUN" element={<MUN />}></Route>
-        <Route exact path="/Merch" element={<Merch />}></Route>
-        <Route exact path="/Team" element={<Team />}></Route>
-        <Route exact path="/Sponsers" element={<Sponsers />}></Route>
-      </Routes>
-      <Footer />
-
+        <Navbar/>
+        <Routes>
+          <Route exact path='/' element={<Body />}></Route>
+          <Route exact path="/Events" element={<Events />}></Route>
+          <Route exact path="/Competitions" element={<Competitions />}></Route>
+          <Route exact path="/Kartavya" element={<Kartavya />}></Route>
+          <Route exact path="/MUN" element={<MUN />}></Route>
+          <Route exact path="/Merch" element={<Merch />}></Route>
+          <Route exact path="/Team" element={<Team />}></Route>
+          <Route exact path="/Sponsers" element={<Sponsers />}></Route>
+        </Routes>
+        {data.map((item) => <Footer key={item.id} star={item.star} title={item.title} bg={item.bg}/>)}
     </>
   );
 }

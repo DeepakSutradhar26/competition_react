@@ -1,11 +1,11 @@
 import './footer.css';
 import './mobile_footer.css';
 import './bg_change.css';
+import './star_change.css';
 import circle from './footer_images/Round element.png';
 import circle1 from './circle_images/Frame 15232-min.png'
 import windows from './footer_images/Windows.png';
 import alcheringa from './footer_images/ALCHERINGA.png';
-import star from './footer_images/Star.png'
 import icon1 from './footer_images/Vector.png';
 import icon2 from './footer_images/Vector (1).png';
 import icon3 from './footer_images/Vector (2).png';
@@ -13,10 +13,25 @@ import icon4 from './footer_images/Vector (3).png';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import windows1 from './windows_images/Frame 15230-min.png';
+import React,{ createContext} from 'react';
+
 
 const Footer = (props) => {
+    
     const location = useLocation();
 
+    const data = [
+        { title: "/", bg: "footer ", star: "star", id: 0 },
+        { title: "/Events", bg: "footer img1", star: "star1 star", id: 1 },
+        { title: "/Competitions", bg: "footer img2", star: "star1 star", id: 2 },
+        { title: "/Kartavya", bg: "footer img3", star: "star1 star", id: 3 },
+        { title: "/MUN", bg: "footer img4", star: "star1 star", id: 4 },
+        { title: "/Merch", bg: "footer img5", star: "star1 star", id: 5 },
+        { title: "/Team", bg: "footer img6", star: "star1 star", id: 6 },
+        { title: "/Sponsers", bg: "footer img7", star: "star1 star", id: 7 }];
+
+
+if(location.pathname === props.title){
     return (
         <div className="container">
             <div className="navbar-footer">
@@ -39,7 +54,7 @@ const Footer = (props) => {
                     </ul>
                 </nav>
             </div>
-            <div className={location.pathname === props.title ? 'unactive' :'footer'}>
+            <div className={props.bg}>
                 <div className="circle-box">
                     <img className={location.pathname === '/' ? '' : 'unactive'} src={circle} alt="" />
                     <img className={location.pathname === '/Events' ? '' : 'unactive'} src={circle1} alt="" />
@@ -63,12 +78,12 @@ const Footer = (props) => {
                     <img className={location.pathname === '/Team' ? 'windows-img' : 'unactive'} src={windows} alt="" />
                     <img className={location.pathname === '/Sponsers' ? 'windows-img' : 'unactive'} src={windows} alt="" />
                     <img className="alcheringa" src={alcheringa} alt="" />
-                    <img id="spark1" className={location.pathname === props.title ? 'unactive':'star'} src={props.star} alt="" />
-                    <img id="spark2" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
-                    <img id="spark3" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
-                    <img id="spark4" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
-                    <img id="spark5" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
-                    <img id="spark6" className={location.pathname === props.title ? 'star':'unactive'} src={props.star} alt="" />
+                    <div key={props.id} id="spark1" className={props.star}></div>
+                    <div key={props.id} id="spark2" className={props.star}></div>
+                    <div key={props.id} id="spark3" className={props.star}></div>
+                    <div key={props.id} id="spark4" className={props.star}></div>
+                    <div key={props.id} id="spark5" className={props.star}></div>
+                    <div key={props.id} id="spark6" className={props.star}></div>
                 </div>
                 <div className="credits-1">
                     <div className="cred grid-1">
@@ -108,7 +123,7 @@ const Footer = (props) => {
         </div>
     );
 
-
+    }
 }
 
 export default Footer;

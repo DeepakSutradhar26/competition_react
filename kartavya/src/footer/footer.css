@@ -90,6 +90,7 @@
     justify-content: right;
     box-sizing: border-box;
     border: 2px solid red;
+    z-index: 1;
 }
 
 .circle-box img{
@@ -114,6 +115,7 @@
     margin: 0;
     padding: 0;
     border: 2px solid red;
+    z-index: 1;
 }
 
 .windows-img{
@@ -237,6 +239,8 @@
     position: absolute;
     height: 4.27vw;
     width: 4.24vw;
+    border: 2px solid red;
+    background-image: url('./footer_images/Star.png');
     animation-name: all-spark;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
