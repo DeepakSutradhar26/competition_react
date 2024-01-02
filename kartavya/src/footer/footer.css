@@ -50,6 +50,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .navbar-footer ul li a{
@@ -110,7 +111,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 2vw;
+    top: 3vh;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -151,6 +152,7 @@
 
 .cred h1{
     font-size: var(--font-size-20-1440);
+    font-weight: 600;
 }
 
 .cred-1 h1{
@@ -231,6 +233,7 @@
 
 .info{
     font-family: 'Uncut sans regular';
+    font-weight: 400;
     font-size: var(--font-size-16-1440);
     padding: 1vw 0vw 2vw 0vw;
 }
@@ -241,9 +244,12 @@
     width: 4.24vw;
     border: 2px solid red;
     background-image: url('./footer_images/Star.png');
+    background-position: center;
+    background-size: cover;
     animation-name: all-spark;
     animation-fill-mode: forwards;
     animation-iteration-count: infinite;
+    z-index: 1;
 }
 
 @keyframes all-spark{

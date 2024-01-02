@@ -1,11 +1,14 @@
 :root{
-    --font-size-10-360: 2.77vw;
+    --font-size-16-mobile: 4.44vw;
+    --font-size-12-mobile: 3.33vw;
+    --font-size-10-mobile: 2.65vw;
 }
 
 
 @media (max-width: 1024px){
     .navbar-footer{
        height: 10vh;
+       z-index: 2;
     }
     
     .navbar-footer ul{
@@ -22,6 +25,11 @@
       width: 83.33vw;
     }
 
+    .alcheringa{
+        height: 11.89vw;
+        width: 77.68vw;
+    }
+
     .extra-box{
         height: 40vh;
     }
@@ -36,11 +44,16 @@
 
     .cred{
         width: 43.9vw;
-        font-size: 2vw;
     }
 
-    .cred h1,p{
-        font-size: 2vw;
+    .cred h1{
+        font-size: var(--font-size-16-mobile) !important;
+        font-weight: 600;
+    }
+
+    .info{
+        font-size: var(--font-size-12-mobile) !important;
+        font-weight: 400;
     }
 
     .grid-1{
@@ -70,7 +83,7 @@
     #follow-text,#on-text{
         font-family: 'Uncut sans regular';
         display: inline-block;
-        font-size: 2vw;
+        font-size: var(--font-size-16-mobile) !important;
         height: 3vh;
     }
 
@@ -79,6 +92,11 @@
         flex-direction: column;
         align-items: end;
         margin-top: 0;
+    }
+
+    .icons img{
+        height: var(--font-size-16-mobile) !important;
+        width: var(--font-size-16-mobile) !important;
     }
 
     #seperate img{
@@ -96,30 +114,22 @@
         width: 86.66vw;
         display: flex;
         justify-content: center;
-        align-items: end;
-        font-size: 2vw;
+        align-items: center;
+        font-size: var(--font-size-10-mobile) !important;
     }
 
     .extra-width a{
-        font-size: 2vw;
-        padding: 0vw 0.6vw;
+        padding: 0vw 0.6vw 0vw 0.6vw;
+        font-size: var(--font-size-10-mobile) !important;
+        
     }
 
     .credits-2 div{
         display: none;
-        font-size: var(--font-size-10-360);
     }
 
     .windows-img{
         object-fit: cover;
-    }
-
-    .img-hider{
-        display: inline-block;
-        width: 40vw;
-        height: 35vw;
-        border: 2px solid red;
-        overflow: hidden;
     }
 
 }

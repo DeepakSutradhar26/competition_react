@@ -13,23 +13,12 @@ import icon4 from './footer_images/Vector (3).png';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import windows1 from './windows_images/Frame 15230-min.png';
-import React,{ createContext} from 'react';
+import React from 'react';
 
 
 const Footer = (props) => {
     
     const location = useLocation();
-
-    const data = [
-        { title: "/", bg: "footer ", star: "star", id: 0 },
-        { title: "/Events", bg: "footer img1", star: "star1 star", id: 1 },
-        { title: "/Competitions", bg: "footer img2", star: "star1 star", id: 2 },
-        { title: "/Kartavya", bg: "footer img3", star: "star1 star", id: 3 },
-        { title: "/MUN", bg: "footer img4", star: "star1 star", id: 4 },
-        { title: "/Merch", bg: "footer img5", star: "star1 star", id: 5 },
-        { title: "/Team", bg: "footer img6", star: "star1 star", id: 6 },
-        { title: "/Sponsers", bg: "footer img7", star: "star1 star", id: 7 }];
-
 
 if(location.pathname === props.title){
     return (

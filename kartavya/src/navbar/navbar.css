@@ -56,14 +56,24 @@
 }
 
 .register{
-    font-family: 'Uncut sans';
-    font-size: var(--font-size1);
     color: black;
     height: 2.49vw;
     width: 8.32vw;
     background-color: var(--color3);
     border-radius: 10vw;
     border: none;
+}
+
+.register a{
+    font-family: 'Uncut sans regular';
+    font-size: var(--font-size1);
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+}
+
+.sit-box{
+    display: none;
 }
 
 .fixing{ 
@@ -108,6 +118,7 @@
         display: none;
         justify-content: center;
         align-items: center;
+        z-index: 3;
     }
 
     #navbar-menu.active{
@@ -170,6 +181,10 @@
         border-radius: 10vw;
         border: none;
     }
+
+    .sit-box{
+        display: inline-block;
+    }
     
     #icons{
         color: white;
@@ -193,6 +208,9 @@
     .register{
         width: 25vw;
         height: 5.65vw;
+    }
+
+    .register a{
         font-size: 4.07vw;
     }
 
