@@ -28,7 +28,7 @@ if(location.pathname === props.title){
                     <ul>
                         <li className={location.pathname === '/Events' ? 'c c1' : ''}>
                             <Link to="/Events">Events</Link></li>
-                        <li className={location.pathname === '/Competitions' ? 'c c1' : ''}>
+                        <li className={location.pathname === '/Competitions' ? 'c c2' : ''}>
                             <Link to="/Competitions">Competitions</Link></li>
                         <li className={location.pathname === '/Kartavya' ? 'c c3' : ''}>
                             <Link to="/Kartavya">Kartayva</Link></li>
