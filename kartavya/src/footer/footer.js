@@ -53,9 +53,17 @@ if(location.pathname === props.title){
                     <img className={location.pathname === '/Merch' ? '' : 'unactive'} src={circle} alt="" />
                     <img className={location.pathname === '/Team' ? '' : 'unactive'} src={circle} alt="" />
                     <img className={location.pathname === '/Sponsers' ? '' : 'unactive'} src={circle} alt="" />
+
+                    <img id="circle-2nd-img" className={location.pathname === '/' ? '' : 'unactive'} src={circle} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/Events' ? '' : 'unactive'} src={circle1} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/Competitions' ? '' : 'unactive'} src={circle} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/Kartavya' ? '' : 'unactive'} src={circle} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/MUN' ? '' : 'unactive'} src={circle} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/Merch' ? '' : 'unactive'} src={circle} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/Team' ? '' : 'unactive'} src={circle} alt="" />
+                    <img id="circle-2nd-img" className={location.pathname === '/Sponsers' ? '' : 'unactive'} src={circle} alt="" />
                 </div>
                 <div className="extra-box">
-
                 </div>
                 <div className="windows-box">
                     <img className={location.pathname === '/' ? 'windows-img' : 'unactive'} src={windows} alt="" />

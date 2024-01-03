@@ -126,6 +126,7 @@
         place-items: center;
         animation-name: hamburger;
         animation-duration: 0.4s;
+        transition-timing-function: ease-out;
     }
 
     @keyframes hamburger{
@@ -148,7 +149,6 @@
         align-items: center;
         height: 58.84vw;
         width: 33vw;
-        box-sizing: border-box;
         margin: auto;
         z-index: 2;
     }
@@ -160,6 +160,17 @@
         animation-name: hamburger1;
         animation-duration: 0.401s;
         transition-timing-function: ease-in;
+        height: 6.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #navbar-menu ul li a{
+        height: 6.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     @keyframes hamburger1{

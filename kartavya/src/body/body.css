@@ -11,7 +11,7 @@
 }
 
 .body {
-    height: 89.11vw;
+    height: 173.12vh;
     width: 100vw;
     background-image: url('./body_images/bg_c-min.png');
     background-repeat: no-repeat;
@@ -105,6 +105,7 @@
     box-sizing: border-box;
     font-family: 'Uncut sans regular';
     border-radius: 0.55vw;
+    z-index: 1;
 
 }
 

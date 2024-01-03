@@ -28,6 +28,7 @@
     .alcheringa{
         height: 11.89vw;
         width: 77.68vw;
+        top: 30vh;
     }
 
     .extra-box{
@@ -130,6 +131,34 @@
 
     .windows-img{
         object-fit: cover;
+    }
+
+    #spark1{
+        top: 25vh;
+        left: 4vw;
+    }
+
+    #spark2{
+        top: 38vh;
+        left: 4vw;
+    }
+
+    #spark3{
+        top: 25vh;
+        right: 4vw;
+    }
+
+    #spark4{
+        top: 38vh;
+        right: 4vw;
+    }
+
+    #spark5{
+        top: 25vh;
+    }
+
+    #spark6{
+        top: 38vh;
     }
 
 }
