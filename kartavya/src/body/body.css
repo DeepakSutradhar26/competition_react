@@ -52,7 +52,7 @@
 .search {
     height: 2.08vw;
     width: 41.66vw;
-    background: transparent;
+    background: none;
     border: none;
     border-bottom: 0.069vw solid var(--color-w);
 }
@@ -64,8 +64,9 @@
 
 .fa-magnifying-glass {
     color: var(--color-w);
-    position: relative;
-    right: 2.5vw;
+    font-size: 1.33vw;
+    position: relative !important;
+    right: 1.4vw;
 }
 
 .fa-magnifying-glass:hover {
@@ -106,15 +107,17 @@
     font-family: 'Uncut sans regular';
     border-radius: 0.55vw;
     z-index: 1;
-
 }
 
-.modules p,
-i {
+.modules:hover{
+    cursor: pointer;
+}
+
+.modules p {
     padding: 1.11vw 1.11vw;
 }
 
-.modules i {
+.fa-sort-down {
     height: 2vw;
     width: 4vw;
     position: relative;

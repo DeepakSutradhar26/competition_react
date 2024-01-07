@@ -51,6 +51,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1;
+    opacity: 0.8;
 }
 
 .navbar-footer ul li a{
@@ -135,7 +136,7 @@
 
 .credits-1{
     width: 78vw;
-    height: 18vh;
+    height: 15vh;
     color: white;
     display: flex;
     flex-direction: row;
@@ -194,7 +195,7 @@
 }
 
 .credits-2{
-    height: 8vh;
+    height: 11vh;
     width: 78vw;
     color: white;
     display: flex;
@@ -202,6 +203,9 @@
     font-family: 'Uncut sans regular';
     font-size: var(--font-size-16-1440);
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .extra-width{

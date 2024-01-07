@@ -1,0 +1,20 @@
+@media (max-width: 1024px) {
+  .list {
+    right: auto;
+    top: 23.8vw;
+  }
+
+  .search-box{
+    height: 20vh;
+  }
+
+  .container-1 {
+    flex-direction: column;
+    height: 20vh;
+    justify-content: space-evenly;
+  }
+
+  .search{
+    height: 2vh;
+  }
+}

@@ -1,4 +1,5 @@
 import './body.css';
+import './mobile_body.css'
 import { useState } from 'react';
 
 const Body = () => {
@@ -18,14 +19,14 @@ const Body = () => {
         <div className="body">
             <div className="search-box">
                 <div className="container-1">
-                    <form action="">
+                    <form action="" className='form'>
                         <input className='search' type="text" placeholder='Search Competitions' value={value} onChange={onChange}/>
-                        <i className='fa-solid fa-magnifying-glass'></i>
+                        <div className='fa-solid fa-magnifying-glass'></div>
                     </form>
-                    <div className="modules">
+                    <div className="modules" onClick={handleClick}>
                         <p>Modules</p>
                         <div className="small-box">
-                            <i className={state ? 'fa-solid fa-sort-down fa-active' : 'fa-solid fa-sort-down'} onClick={handleClick}></i>
+                            <div className={state ? 'fa-solid fa-sort-down fa-active' : 'fa-solid fa-sort-down'}></div>
                         </div>
                     </div>
                     <div className={state ? 'list list-active' : 'list'}>

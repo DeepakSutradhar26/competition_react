@@ -4,7 +4,7 @@
 }
 
 :root{
-    --color1: #181818;
+    --color1: #181818 !important;
 }
 
 .header{
@@ -47,6 +47,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 0.8;
 }
 
 #navbar-menu ul li a{
@@ -59,9 +60,10 @@
     color: black;
     height: 2.49vw;
     width: 8.32vw;
-    background-color: var(--color3);
+    background-color: #39A27A;
     border-radius: 10vw;
     border: none;
+    opacity: 0.8;
 }
 
 .register a{
@@ -69,7 +71,7 @@
     font-size: var(--font-size1);
     font-weight: 700;
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 .sit-box{
@@ -202,8 +204,7 @@
         background-color: var(--color1);
         outline: none;
         border: none;
-        height: 3.90vw;
-        width: 6.24vw;
+        font-size: 3.90vw;
         position: absolute;
         right: 6vw;
         display: flex;

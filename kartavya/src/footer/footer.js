@@ -84,17 +84,17 @@ if(location.pathname === props.title){
                 </div>
                 <div className="credits-1">
                     <div className="cred grid-1">
-                        <h1>Siddhant Singh</h1>
+                        <h1>Anurag</h1>
                         <div className="info">
-                            <p>+91 9310859978</p>
-                            <p>siddhant.s@alcheringa.in</p>
+                            <p>+91 7061520276</p>
+                            <p>anurag@alcheringa.in</p>
                         </div>
                     </div>
                     <div className="cred grid-2">
-                        <h1>Siddhant Singh</h1>
+                        <h1>Ankit Kumar</h1>
                         <div className="info">
-                            <p>+91 9310859978</p>
-                            <p>siddhant.s@alcheringa.in</p>
+                            <p>+91 8340349585</p>
+                            <p>ankit.k@alcheringa.in</p>
                         </div>
                     </div>
                     <div className="cred-1" id="seperate">

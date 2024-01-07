@@ -93,6 +93,7 @@
         flex-direction: column;
         align-items: end;
         margin-top: 0;
+        padding-top: 1.5vw;
     }
 
     .icons img{

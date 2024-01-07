@@ -1,6 +1,6 @@
 import './navbar.css';
 import './color_changer.css';
-import './register_color.css'
+import './register_color.css';
 import alcher_logo from './navbar_images/ALCHERINGA logo.png';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
@@ -43,7 +43,7 @@ const Navbar = (props) => {
                 <button className= {props.reg_bg} ><Link to="/Register">Register</Link></button>
             </div>
             <div className="hidden-box"></div>
-            <button id="icons" className={state === true ? 'fas fa-times fa-2x' : 'fas fa-bars fa-2x'} onClick={() => { handleClick() }}>
+            <button id="icons" className={state === true ? 'fas fa-times fa-1x' : 'fas fa-bars fa-1x'} onClick={handleClick}>
             </button>
             <div className="sit-box"></div>
         </div>
