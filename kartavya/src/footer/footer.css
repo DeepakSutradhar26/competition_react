@@ -127,11 +127,23 @@
     mix-blend-mode: difference;
 }
 
-.alcheringa{
+.complex-grid{
     position: absolute;
-    height: 8.30vw;
+    height: 16.84vw;
     width: 54.22vw;
     top: 11vw;
+    display: grid;
+    grid-template-columns: 4.24vw auto 4.24vw auto 4.27vw;
+    grid-template-rows: 4.27vw 8.30vw;
+}
+
+.alcheringa{
+    height: 8.30vw;
+    width: 54.22vw;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
 
 .credits-1{
@@ -238,7 +250,6 @@
 }
 
 .star{
-    position: absolute;
     height: 4.27vw;
     width: 4.24vw;
     background-image: url('./footer_images/Star.png');
@@ -267,43 +278,35 @@
 }
 
 #spark1{
-    top: 6vw;
-    left: 25vw;
     animation-duration: 2.5s;
     transition: all 2s;
     animation-timing-function: ease-in-out;
 }
 
 #spark2{
-    top: 20vw;
-    left: 25vw;
+
     animation-duration: 4s;
     transition: all 2s;
 }
 
 #spark3{
-    top: 6vw;
-    right: 25vw;
+
     animation-duration: 8s;
     transition: all 2s;
 }
 
 #spark4{
-    top: 20vw;
-    right: 25vw;
     animation-duration: 2.5s;
     transition: all 2s;
     animation-timing-function: ease-in-out;
 }
 
 #spark5{
-    top: 6vw;
     animation-duration: 4s;
     transition: all 2s;
 }
 
 #spark6{
-    top: 20vw;
     animation-duration: 8s;
     transition: all 2s;
 }

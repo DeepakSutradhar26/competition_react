@@ -2,8 +2,6 @@ import './footer.css';
 import './mobile_footer.css';
 import './bg_change.css';
 import './star_change.css';
-import circle from './footer_images/Round element.png';
-import circle1 from './circle_images/Frame 15232-min.png'
 import windows from './footer_images/Windows.png';
 import alcheringa from './footer_images/ALCHERINGA.png';
 import icon1 from './footer_images/Vector.png';
@@ -45,42 +43,29 @@ if(location.pathname === props.title){
             </div>
             <div className={props.bg}>
                 <div className="circle-box">
-                    <img className={location.pathname === '/' ? '' : 'unactive'} src={circle} alt="" />
-                    <img className={location.pathname === '/Events' ? '' : 'unactive'} src={circle1} alt="" />
-                    <img className={location.pathname === '/Competitions' ? '' : 'unactive'} src={circle} alt="" />
-                    <img className={location.pathname === '/Kartavya' ? '' : 'unactive'} src={circle} alt="" />
-                    <img className={location.pathname === '/MUN' ? '' : 'unactive'} src={circle} alt="" />
-                    <img className={location.pathname === '/Merch' ? '' : 'unactive'} src={circle} alt="" />
-                    <img className={location.pathname === '/Team' ? '' : 'unactive'} src={circle} alt="" />
-                    <img className={location.pathname === '/Sponsers' ? '' : 'unactive'} src={circle} alt="" />
-
-                    <img id="circle-2nd-img" className={location.pathname === '/' ? '' : 'unactive'} src={circle} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/Events' ? '' : 'unactive'} src={circle1} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/Competitions' ? '' : 'unactive'} src={circle} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/Kartavya' ? '' : 'unactive'} src={circle} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/MUN' ? '' : 'unactive'} src={circle} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/Merch' ? '' : 'unactive'} src={circle} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/Team' ? '' : 'unactive'} src={circle} alt="" />
-                    <img id="circle-2nd-img" className={location.pathname === '/Sponsers' ? '' : 'unactive'} src={circle} alt="" />
+                    <img src={props.circle_src} alt="" />
+                    <img id="circle-2nd-img" src={props.circle_src} alt="" />
                 </div>
                 <div className="extra-box">
                 </div>
                 <div className="windows-box">
-                    <img className={location.pathname === '/' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className={location.pathname === '/Events' ? 'windows-img' : 'unactive'} src={windows1} alt="" />
-                    <img className={location.pathname === '/Competitions' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className={location.pathname === '/Kartavya' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className={location.pathname === '/MUN' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className={location.pathname === '/Merch' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className={location.pathname === '/Team' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className={location.pathname === '/Sponsers' ? 'windows-img' : 'unactive'} src={windows} alt="" />
-                    <img className="alcheringa" src={alcheringa} alt="" />
+                    <div className="crop-container">
+                    <div className="crop-box">
+                    <img className="windows-img" src={props.windows_src} alt="" />
+                    </div></div>
+                    <div className="complex-grid">
                     <div key={props.id} id="spark1" className={props.star}></div>
+                    <div className="blank-box"></div>
                     <div key={props.id} id="spark2" className={props.star}></div>
+                    <div className="blank-box"></div>
                     <div key={props.id} id="spark3" className={props.star}></div>
-                    <div key={props.id} id="spark4" className={props.star}></div>
+                    <img className="alcheringa" src={alcheringa} alt="" />
                     <div key={props.id} id="spark5" className={props.star}></div>
+                    <div className="blank-box"></div>
                     <div key={props.id} id="spark6" className={props.star}></div>
+                    <div className="blank-box"></div>
+                    <div key={props.id} id="spark4" className={props.star}></div>
+                    </div>
                 </div>
                 <div className="credits-1">
                     <div className="cred grid-1">

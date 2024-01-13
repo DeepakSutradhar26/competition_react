@@ -1,7 +1,7 @@
 @media (max-width: 1024px) {
   .list {
     right: auto;
-    top: 23.8vw;
+    top: 20vh !important;
   }
 
   .search-box{

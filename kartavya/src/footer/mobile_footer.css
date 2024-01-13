@@ -15,20 +15,45 @@
         display: none;
     }
 
+    .circle-box{
+        width: 80vw;
+    }
+
     .circle-box img{
         height: 7.22vw;
         width: 7.22vw;
     }
 
     .windows-box{
-      height: 39.16vw;
-      width: 83.33vw;
+      height: 43vw;
+      width: 90vw;
+    }
+
+    .windows-img{
+      width: 150vw;
+    }
+
+    .crop-container{
+        width: 100vw;
+        bottom: 0vw;
+    }
+
+    .crop-box{
+        height: 50vw;
+        width: 40vw;
+        overflow: hidden;
+        -webkit-box-reflect: right 10vw;
+    }
+
+    .complex-grid{
+        height: 20.43vw;
+        width: 77.68vw;
+        top: 30vh;
     }
 
     .alcheringa{
         height: 11.89vw;
         width: 77.68vw;
-        top: 30vh;
     }
 
     .extra-box{
@@ -132,34 +157,6 @@
 
     .windows-img{
         object-fit: cover;
-    }
-
-    #spark1{
-        top: 25vh;
-        left: 4vw;
-    }
-
-    #spark2{
-        top: 38vh;
-        left: 4vw;
-    }
-
-    #spark3{
-        top: 25vh;
-        right: 4vw;
-    }
-
-    #spark4{
-        top: 38vh;
-        right: 4vw;
-    }
-
-    #spark5{
-        top: 25vh;
-    }
-
-    #spark6{
-        top: 38vh;
     }
 
 }
