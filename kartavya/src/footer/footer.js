@@ -2,7 +2,6 @@ import './footer.css';
 import './mobile_footer.css';
 import './bg_change.css';
 import './star_change.css';
-import windows from './footer_images/Windows.png';
 import alcheringa from './footer_images/ALCHERINGA.png';
 import icon1 from './footer_images/Vector.png';
 import icon2 from './footer_images/Vector (1).png';
@@ -10,7 +9,6 @@ import icon3 from './footer_images/Vector (2).png';
 import icon4 from './footer_images/Vector (3).png';
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import windows1 from './windows_images/Frame 15230-min.png';
 import React from 'react';
 
 
@@ -39,6 +37,8 @@ if(location.pathname === props.title){
                         <li className={location.pathname === '/Sponsers' ? 'c c7' : ''}>
                             <Link to="/Sponsers">Sponsers</Link></li>
                     </ul>
+                    {/* Change color in color_change.css */}
+                    {/* Change background in bg_change.css */}
                 </nav>
             </div>
             <div className={props.bg}>
@@ -65,6 +65,8 @@ if(location.pathname === props.title){
                     <div key={props.id} id="spark6" className={props.star}></div>
                     <div className="blank-box"></div>
                     <div key={props.id} id="spark4" className={props.star}></div>
+
+                    {/* Change stars color in star_change.css file */}
                     </div>
                 </div>
                 <div className="credits-1">

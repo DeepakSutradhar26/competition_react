@@ -11,22 +11,14 @@
 }
 
 .body {
-    height: 173.12vh;
+    min-height: 89.11vw;
     width: 100vw;
-    background-image: url('./body_images/bg_c-min.png');
+    background-image: url('./body_images/bg_c-min.png'),url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg'), url('./body_images/top\ black\ overlay\ for\ infinite\ tiles-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
-}
-
-.body::before {
-    content: "";
-    position: absolute;
-    height: 89.11vw;
-    width: 100vw;
-    background: url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg'), url('./body_images/top\ black\ overlay\ for\ infinite\ tiles-min.jpg');
     background-size: cover,cover;
     background-position: center,center;
     mix-blend-mode: color-burn;
@@ -55,11 +47,16 @@
     background: none;
     border: none;
     border-bottom: 0.069vw solid var(--color-w);
+    position: relative;
+    color: var(--color-w);
+    font-size: var(--font-size-24-1440);
+    outline: none;
 }
 
 .search::placeholder {
     color: var(--color-w);
     font-size: var(--font-size-24-1440);
+    opacity: 0.7;
 }
 
 .fa-magnifying-glass {
@@ -74,22 +71,11 @@
 }
 
 .fa-active {
-    transform: rotate(180deg);
     transition: all 0.1s;
     animation-duration: 0.1s;
     animation-name: move-down;
     animation-fill-mode: forwards;
     animation-timing-function: ease-out;
-}
-
-@keyframes move-down {
-    0% {
-        top: 0.95vw;
-    }
-
-    100% {
-        top: 1.6vw;
-    }
 }
 
 .modules {
@@ -153,6 +139,7 @@
     display: grid;
     animation-name: list-anime;
     animation-duration: 0.4s;
+    z-index: 10;
 }
 
 @keyframes list-anime {
@@ -198,6 +185,10 @@
     transition-timing-function: ease-in;
 }
 
+.list ul li:hover{
+    cursor: pointer;
+}
+
 .title {
     height: 4.78vw;
     width: 100vw;
@@ -214,7 +205,7 @@
 }
 
 .item-box {
-    height: 69.12vw;
+    min-height: 69.12vw;
     width: 100vw;
     border: 2px solid red;
     display: flex;
@@ -224,7 +215,7 @@
 
 .item-box::before {
     content: '';
-    height: 69.12vw;
+    min-height: 69.12vw;
     width: 100vw;
     background-image: url('./body_images/Stairs.png');
     background-size: cover;
@@ -250,16 +241,18 @@
 }
 
 .item-container {
-    height: 63.96vw;
+    min-height: 63.96vw;
     width: 86.12vw;
     border: 2px solid red;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
-.item {
+.icon{
+    height: 30.48vw;
+    width: 26.875vw;
     border: 2px solid red;
-    margin: 1vw 4vw;
+    margin: 1vw 0.1vw;
+    color: white;
 }
