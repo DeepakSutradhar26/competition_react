@@ -10,4 +10,5 @@ const searchlist = ["Electric Heels", "Step Up", "Navras",
     "3 vs 3 Basketball", "3 vs 3 Volleyball", "Genral Quiz", "Buisness Quiz", "Comic Quiz",
     "Sports Quiz", "Theatrix", "Halla Bol", "Monodrama", "Critical Damage"];
 
+    searchlist.sort();
 export default searchlist;

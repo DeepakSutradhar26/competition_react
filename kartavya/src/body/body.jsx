@@ -1,8 +1,9 @@
 import './body.css';
-import './mobile_body.css'
+import './mobile_body.css';
 import { useState } from 'react';
 import React from 'react';
 import data from './data.js';
+import titledata from './title.js';
 import searchlist from './searchlist.js';
 
 const Body = () => {
@@ -22,6 +23,12 @@ const Body = () => {
 
     const onChange = (event) => {
         setValue(event.target.value);
+        setTitle(titledata.filter((item)=>{
+            return value.toLowerCase() === '' ? item : item.toLowerCase().includes(value);
+        }).slice(0,1));
+        setArray(searchlist.filter((item)=>{
+            return value.toLowerCase() === '' ? item: item.toLowerCase().includes(value);
+        }).slice(0,6));
     }
 
     const module = (num) => {
