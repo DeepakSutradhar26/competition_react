@@ -19,8 +19,8 @@ const Footer = (props) => {
 if(location.pathname === props.title){
     return (
         <div className="container">
-            <div className="navbar-footer">
-                <nav className="navbar-menu-footer">
+            <div className="navbar_footer">
+                <nav className="navbar_menu_footer">
                     <ul>
                         <li className={location.pathname === '/Events' ? 'c c1' : ''}>
                             <Link to="/Events">Events</Link></li>
@@ -42,52 +42,52 @@ if(location.pathname === props.title){
                 </nav>
             </div>
             <div className={props.bg}>
-                <div className="circle-box">
+                <div className="circle_box">
                     <img src={props.circle_src} alt="" />
-                    <img id="circle-2nd-img" src={props.circle_src} alt="" />
+                    <img id="circle_2nd_img" src={props.circle_src} alt="" />
                 </div>
-                <div className="extra-box">
+                <div className="extra_box">
                 </div>
-                <div className="windows-box">
-                    <div className="crop-container">
-                    <div className="crop-box">
-                    <img className="windows-img" src={props.windows_src} alt="" />
+                <div className="windows_box">
+                    <div className="crop_container">
+                    <div className="crop_box">
+                    <img className="windows_img" src={props.windows_src} alt="" />
                     </div></div>
-                    <div className="complex-grid">
+                    <div className="complex_grid">
                     <div key={props.id} id="spark1" className={props.star}></div>
-                    <div className="blank-box"></div>
+                    <div className="blank_box"></div>
                     <div key={props.id} id="spark2" className={props.star}></div>
-                    <div className="blank-box"></div>
+                    <div className="blank_box"></div>
                     <div key={props.id} id="spark3" className={props.star}></div>
                     <img className="alcheringa" src={alcheringa} alt="" />
                     <div key={props.id} id="spark5" className={props.star}></div>
-                    <div className="blank-box"></div>
+                    <div className="blank_box"></div>
                     <div key={props.id} id="spark6" className={props.star}></div>
-                    <div className="blank-box"></div>
+                    <div className="blank_box"></div>
                     <div key={props.id} id="spark4" className={props.star}></div>
 
                     {/* Change stars color in star_change.css file */}
                     </div>
                 </div>
-                <div className="credits-1">
-                    <div className="cred grid-1">
+                <div className="credits_1">
+                    <div className="cred grid_1">
                         <h1>Anurag</h1>
                         <div className="info">
                             <p>+91 7061520276</p>
                             <p>anurag@alcheringa.in</p>
                         </div>
                     </div>
-                    <div className="cred grid-2">
+                    <div className="cred grid_2">
                         <h1>Ankit Kumar</h1>
                         <div className="info">
                             <p>+91 8340349585</p>
                             <p>ankit.k@alcheringa.in</p>
                         </div>
                     </div>
-                    <div className="cred-1" id="seperate">
-                        <p id='normal-text'>Follow us on</p>
-                        <p id="follow-text">Follow us</p>
-                        <p id="on-text">on</p>
+                    <div className="cred_1" id="seperate">
+                        <p id='normal_text'>Follow us on</p>
+                        <p id="follow_text">Follow us</p>
+                        <p id="on_text">on</p>
                         <div className="icons">
                             <img src={icon1} alt="" />
                             <img src={icon2} alt="" />
@@ -96,8 +96,8 @@ if(location.pathname === props.title){
                         </div>
                     </div>
                 </div>
-                <div className="credits-2">
-                    <p className='extra-width'>Designed and Developed by <a href="">Alcher Creatives</a> & <a href="">Alcher Web Operations</a></p>
+                <div className="credits_2">
+                    <p className='extra_width'>Designed and Developed by <a href="">Alcher Creatives</a> & <a href="">Alcher Web Operations</a></p>
                     <div>
                         <p>For Business Enquiries</p>
                         <a href="">publicrelations24@alcheringa.in</a>

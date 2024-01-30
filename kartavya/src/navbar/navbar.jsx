@@ -21,7 +21,7 @@ const Navbar = (props) => {
             <div className="logo">
                 <Link to="/"><img class="logo" src={alcher_logo} alt="" /></Link>
             </div>
-            <nav id="navbar-menu" className={state === true ? '.navbar-menu active' : 'navbar-menu'}>
+            <nav id="navbar_menu" className={state === true ? '.navbar_menu active' : 'navbar_menu'}>
                 <ul>
                     <li className={location.pathname === '/Events' ? 'c c1' : ''}>
                         <Link to="/Events">Events</Link></li>
@@ -42,10 +42,10 @@ const Navbar = (props) => {
             <div className="fixing">
                 <button className= {props.reg_bg} ><Link to="/Register">Register</Link></button>
             </div>
-            <div className="hidden-box"></div>
+            <div className="hidden_box"></div>
             <button id="icons" className={state === true ? 'fas fa-times fa-1x' : 'fas fa-bars fa-1x'} onClick={handleClick}>
             </button>
-            <div className="sit-box"></div>
+            <div className="sit_box"></div>
         </div>
     );
     }

@@ -13,18 +13,27 @@
 .body {
     min-height: 89.11vw;
     width: 100vw;
-    background-image: url('./body_images/bg_c-min.png'),url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg'), url('./body_images/top\ black\ overlay\ for\ infinite\ tiles-min.jpg');
+    background-image: url('./body_images/bg_c-min.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;
     flex-direction: column;
+}
+
+.body::before{
+    content: "";
+    position: absolute;
+    min-height: 89.11vw;
+    width: 100vw;
+    background: url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg'), url('./body_images/top\ black\ overlay\ for\ infinite\ tiles-min.jpg');
+    background-repeat: repeat-y,no-repeat;
     background-size: cover,cover;
     background-position: center,center;
     mix-blend-mode: color-burn;
 }
 
-.search-box {
+.search_box {
     height: 15.21vw;
     width: 100vw;
     display: flex;
@@ -32,7 +41,7 @@
     align-items: center;
 }
 
-.container-1 {
+.container_1 {
     height: 3.40vw;
     width: 86.11vw;
     display: flex;
@@ -114,7 +123,7 @@
     z-index: 0;
 }
 
-.small-box {
+.small_box {
     position: relative;
     bottom: 0.3vw;
     height: 4vw;
@@ -135,7 +144,7 @@
     border: 2px solid red;
 }
 
-.list-active {
+.list_active {
     display: grid;
     animation-name: list-anime;
     animation-duration: 0.4s;
@@ -192,7 +201,6 @@
 .title {
     height: 4.78vw;
     width: 100vw;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -204,16 +212,15 @@
     color: var(--color2);
 }
 
-.item-box {
+.item_box {
     min-height: 69.12vw;
     width: 100vw;
-    border: 2px solid red;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.item-box::before {
+.item_box::before {
     content: '';
     min-height: 69.12vw;
     width: 100vw;
@@ -240,10 +247,9 @@
     }
 }
 
-.item-container {
+.item_container {
     min-height: 63.96vw;
     width: 86.12vw;
-    border: 2px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -252,7 +258,23 @@
 .icon{
     height: 30.48vw;
     width: 26.875vw;
-    border: 2px solid red;
     margin: 1vw 0.1vw;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
 }
+
+.iconsIMG{
+    width: 26.87vw;
+}
+
+.icon_text{
+    margin: 1vw 0vw;
+    color: white;
+    font-size: 1.94vw;
+    font-weight: 700;
+}
+

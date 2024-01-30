@@ -5,47 +5,47 @@
 }
 
 
-@media (max-width: 1424px){
-    .navbar-footer{
+@media (max-width: 1024px){
+    .navbar_footer{
        height: 10vh;
        z-index: 2;
     }
     
-    .navbar-footer ul{
+    .navbar_footer ul{
         display: none;
     }
 
-    .circle-box{
+    .circle_box{
         width: 80vw;
     }
 
-    .circle-box img{
+    .circle_box img{
         height: 7.22vw;
         width: 7.22vw;
     }
 
-    .windows-box{
+    .windows_box{
       height: 43vw;
       width: 90vw;
     }
 
-    .windows-img{
+    .windows_img{
       width: 150vw;
     }
 
-    .crop-container{
+    .crop_container{
         width: 100vw;
         bottom: 0vw;
     }
 
-    .crop-box{
+    .crop_box{
         height: 50vw;
         width: 40vw;
         overflow: hidden;
         -webkit-box-reflect: right 10vw;
     }
 
-    .complex-grid{
+    .complex_grid{
         height: 20.43vw;
         width: 77.68vw;
         top: 30vh;
@@ -56,11 +56,11 @@
         width: 77.68vw;
     }
 
-    .extra-box{
+    .extra_box{
         height: 40vh;
     }
 
-    .credits-1{
+    .credits_1{
         height: 30vh;
         width: 87.8vw;
         display: grid;
@@ -82,11 +82,11 @@
         font-weight: 400;
     }
 
-    .grid-1{
+    .grid_1{
         order: 1;
     }
 
-    .grid-2{
+    .grid_2{
         order: 3;
     }
 
@@ -102,11 +102,11 @@
         align-items: end;
     }
 
-    #normal-text{
+    #normal_text{
         display: none;
     }
 
-    #follow-text,#on-text{
+    #follow_text,#on_text{
         font-family: 'Uncut sans regular';
         display: inline-block;
         font-size: var(--font-size-16-mobile) !important;
@@ -132,12 +132,12 @@
         margin: 1vw 0vw;
     }
 
-    .credits-2{
+    .credits_2{
         height: 5.8vh;
         width: 86.66vw;
     }
 
-    .extra-width{
+    .extra_width{
         width: 86.66vw;
         display: flex;
         justify-content: center;
@@ -145,17 +145,17 @@
         font-size: var(--font-size-10-mobile) !important;
     }
 
-    .extra-width a{
+    .extra_width a{
         padding: 0vw 0.6vw 0vw 0.6vw;
         font-size: var(--font-size-10-mobile) !important;
         
     }
 
-    .credits-2 div{
+    .credits_2 div{
         display: none;
     }
 
-    .windows-img{
+    .windows_img{
         object-fit: cover;
     }
 
