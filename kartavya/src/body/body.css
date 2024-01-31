@@ -13,24 +13,18 @@
 .body {
     min-height: 89.11vw;
     width: 100vw;
-    background-image: url('./body_images/bg_c-min.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.body::before{
-    content: "";
-    position: absolute;
-    min-height: 89.11vw;
-    width: 100vw;
-    background: url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg'), url('./body_images/top\ black\ overlay\ for\ infinite\ tiles-min.jpg');
-    background-repeat: repeat-y,no-repeat;
+    background-image: url('./body_images/Texture\ Pattern\ \(to\ be\ used\ as\ Color\ Burn\).jpg'),url('./body_images/bg_c-min.png');
+    background-repeat: repeat,repeat;
     background-size: cover,cover;
     background-position: center,center;
+    background-blend-mode: multiply;
     mix-blend-mode: color-burn;
+}
+
+.tiles{
+    z-index: 0;
+    position: absolute;
+    -webkit-box-reflect: below;
 }
 
 .search_box {
@@ -130,18 +124,24 @@
     width: 4vw;
 }
 
+.list_container{
+    position: absolute;
+    top: 15vw;
+    right: 5.80vw;
+    height: 42.28vw;
+
+}
+
 .list {
     background: var(--color-db);
     height: 33.88vw;
     width: 26.87vw;
     position: absolute;
-    top: 19.5vw;
-    right: 5.80vw;
+    top: 5.5vw;
     box-sizing: border-box;
     display: none;
     align-items: center;
     border-radius: 0.55vw;
-    border: 2px solid red;
 }
 
 .list_active {
@@ -217,18 +217,18 @@
     width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 
-.item_box::before {
+.item_box::after {
     content: '';
     min-height: 69.12vw;
     width: 100vw;
-    background-image: url('./body_images/Stairs.png');
-    background-size: cover;
+    background-image:url('./body_images/Stairs.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: 46.2vw 13.8vw;
-    z-index: 1;
+    z-index: 0;
     mix-blend-mode: normal;
     position: absolute;
     animation-name: stairs;
@@ -239,11 +239,11 @@
 
 @keyframes stairs {
     0% {
-        background-position: 46.2vw 13.8vw;
+    background-position: 46.2vw 13.8vw;
     }
 
     100% {
-        background-position: 60.48vw 0.7vw;
+    background-position:60.48vw 0.7vw;
     }
 }
 

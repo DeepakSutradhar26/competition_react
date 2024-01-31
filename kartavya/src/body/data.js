@@ -1,29 +1,290 @@
+const info = [{
+    key: 1,
+    category:"Dance",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Electric Heels"
+},
+{
+    key: 2,
+    category:"Dance",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Step Up"
+},
+{
+    key: 3,
+    category:"Dance",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Navras"
+},
+{
+    key: 4,
+    category:"Dance",
+    img: './body_images/Group 1000004203.png',
+    comp_name: "So You Think You Can Dance"
+},
+{
+    key: 5,
+    category:"Dance",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Dancing Duo"
+},
+{
+    key: 7,
+    category:"Vogue Nation",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Haute Couture"
+},
+{
+    key: 8,
+    category:"Vogue Nation",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"States of Dress"
+},
+{
+    key: 9,
+    category:"Vogue Nation",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Glamour Nova"
+},
+{
+    key: 10,
+    category:"Class Apart",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Rap Battle"
+},
+{
+    key: 11,
+    category:"Class Apart",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"BeatBash"
+},
+{
+    key: 12,
+    category:"Class Apart",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Rock-o-phonix"
+},
+{
+    key: 13,
+    category:"Class Apart",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Mr & Ms Alcheringa"
+},
+{
+    key: 14,
+    category:"Class Apart",
+    img: './body_images/Group 1000004203.png',
+    comp_name: "Crossfade"
+},
+{
+    key: 15,
+    category:"Class Apart",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Alcher Con"
+},
+{
+    key: 16,
+    category:"Music",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Voice of Alcheringa"
+},
+{
+    key: 17,
+    category:"Music",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Unplugged"
+},
+{
+    key: 18,
+    category:"Literary",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Parliamentary Debate"
+},
+{
+    key: 19,
+    category:"Literary",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Poetry Slam-Hindi"
+},
+{
+    key: 20,
+    category:"Literary",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Poetry Slam-English"
+},
+{
+    key: 21,
+    category:"Literary",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Zephyr"
+},
+{
+    key: 22,
+    category:"Literary",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Mehfil-e-Alcheringa"
+},
+{
+    key: 24,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Live Sketching"
+},
+{
+    key: 25,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Clay Modelling"
+},
+{
+    key: 26,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Who is it?"
+},
+{
+    key: 27,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Ink the tee"
+},
+{
+    key: 28,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Face Art"
+},
+{
+    key: 29,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Rangoli"
+},
+{
+    key: 30,
+    category:"Art Talkies",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Graffiti"
+},
+{
+    key: 31,
+    category:"Digital Dexterity",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Alcher Diva/Hunk"
+},
+{
+    key: 32,
+    category:"Digital Dexterity",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Doodle Pad"
+},
+{
+    key: 33,
+    category:"Digital Dexterity",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Custom Brush"
+},
+{
+    key: 34,
+    category:"Lights Camera Action",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Just reel it"
+},
+{
+    key: 35,
+    category:"Lights Camera Action",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Vlog Verse"
+},
+{
+    key: 37,
+    category:"Lights Camera Action",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Director's Cut"
+},
+{
+    key: 38,
+    category:"Lights Camera Action",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Snapthrillz"
+},
+{
+    key: 39,
+    category:"Sports",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"5 on 5 Football"
+},
+{
+    key: 40,
+    category:"Sports",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Arm Wrestling"
+},
+{
+    key: 41,
+    category:"Sports",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Gully Cricket"
+},
+{
+    key: 42,
+    category:"Sports",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"3 vs 3 Basketball"
+},
+{
+    key: 43,
+    category:"Sports",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"3 vs 3 Volleyball"
+},
+{
+    key: 44,
+    category:"Quiz",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Genral Quiz"
+},
+{
+    key: 45,
+    category:"Quiz",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Buisness Quiz"
+},
+{
+    key: 46,
+    category:"Quiz",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Comic Quiz"
+},
+{
+    key: 47,
+    category:"Quiz",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Sports Quiz"
+},
+{
+    key: 48,
+    category:"Drama",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Theatrix"
+},
+{
+    key: 49,
+    category:"Drama",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Halla Bol"
+},
+{
+    key: 50,
+    category:"Drama",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Monodrama"
+},
+{
+    key: 51,
+    category:"Critical Damage",
+    img: './body_images/Group 1000004203.png',
+    comp_name:"Critical Damage"
+}];
 
-
-const data = [
-    { title: ["Dance"], key: 0,
-    img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-    ,icons: ["Electric Heels", "Step Up", "Navras", "So You Think You Can Dance", "Dancing Duo"] },
-    { title: ["Vogue Nation"], key: 1,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-    ,icons: ["Haute Couture", "States of Dress", "Glamour Nova"] },
-    { title: ["Class Apart"], key: 2,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["Rap Battle", "BeatBash", "Rock-o-phonix", "Mr & Ms Alcheringa", "Crossfade", "Alcher Con"] },
-    { title: ["Music"], key: 3,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png'] 
-    ,icons: ["Voice of Alcheringa", "Unplugged"] },
-    { title: ["Literary"], key: 4,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["Parliamentary Debate", "Poetry Slam-Hindi", "Poetry Slam-English", "Zephyr", "Mehfil-e-Alcheringa"] },
-    { title: ["Art Talkies"], key: 5,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["Live Sketching", "Clay Modelling", "Who is it?", "Ink the tee", "Face Art", "Rangoli", "Graffiti"] },
-    { title: ["Digital Dexterity"], key: 6,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["Alcher Diva/Hunk", "Doodle Pad", "Custom Brush"] },
-    { title: ["Lights Camera Action"], key: 7,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["Just reel it", "Vlog Verse", "Director's Cut", "Snapthrillz"] },
-    { title: ["Sports"], key: 8,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["5 on 5 Football", "Arm Wrestling", "Gully Cricket", "3 vs 3 Basketball", "3 vs 3 Volleyball"] },
-    { title: ["Quiz"], key: 9,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png']
-     ,icons: ["Genral Quiz", "Buisness Quiz", "Comic Quiz", "Sports Quiz"] },
-    { title: ["Drama"], key: 10,img:['./body_images/Group 1000004203.png','./body_images/Group 1000004203.png','./body_images/Group 1000004203.png'] ,icons: ["Theatrix", "Halla Bol", "Monodrama"] },
-    { title: ["Critical Damage"], key: 11,img:['./body_images/Group 1000004203.png']
-     ,icons: ["Critical Damage"] }];
-
-export default data;
+export default info;

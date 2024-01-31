@@ -1,16 +1,18 @@
-@media (max-width: 1024px) {
-  .list {
+@media (max-width: 700px) {
+
+  .list_container{
+    position: absolute;
+    top: 21.2vh;
     right: auto;
-    top: 20vh !important;
-  }
+}
 
-  .search-box{
+  .search_box{
     height: 20vh;
   }
 
-  .container-1 {
+  .container_1 {
     flex-direction: column;
-    height: 20vh;
+    height: 20vh !important;
     justify-content: space-evenly;
   }
 
